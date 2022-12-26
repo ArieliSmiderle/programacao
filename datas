@@ -1,0 +1,16 @@
+#from datetime import date
+
+#data_atual = date.today()
+#data_em_texto = data_atual.strftime('%d/%m/%Y')
+#print(data_em_texto)
+#ao invés de usar o código: data_em_texto = '{}/{}/{}'.format(data_atual.day, data_atual.month, data_atual.year)
+#que se tivesse 0 na data, iria retornar sem ele, então podemos usar o método strftime()
+#vamos utilizar o código: data_em_texto = data_atual.strftime('%d/%m/%Y')
+#para utilizar hora e data podemos usar o código abaixo
+
+#from datetime import datetime
+
+#data_e_hora_atuais = datetime.now()
+#data_e_hora_em_texto = data_e_hora_atuais.strftime('%d/%m/%Y %H:%M')
+
+#print(data_e_hora_em_texto)
