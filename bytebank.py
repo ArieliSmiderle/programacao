@@ -1,14 +1,12 @@
-from cpf_cnpj import Documento
-from validate_docbr import CPF, CNPJ
+import requests
+from acesso_cep import BuscaEndereco
 
-#cpf_um = Cpf("15316264754")
-#print(cpf_um)
+cep = "01001000"
+objeto_cep = BuscaEndereco(cep)
 
-#cnpj = CNPJ()
-#print(cnpj.validate(exemplo_cnpj))
+#r = requests.get("https://viacep.com.br/ws/01001000/json/")
+#print(r.text)
 
-#exemplo_cnpj = "35379838000112"
-exemplo_cpf = "15316264754"
-documento = Documento.cria_documento(exemplo_cpf) 
+bairro, cidade, uf= objeto_cep.acessa_via_cep()
 
-print(documento)
+print(bairro, cidade, uf)

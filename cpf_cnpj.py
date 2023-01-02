@@ -18,7 +18,7 @@ class DocCpf:
         else:
             raise ValueError("CPF inválido!!")
 
-        def __str__(self):
+    def __str__(self):
             return self.format()
         
     def valida(self, documento):
@@ -36,12 +36,12 @@ class DocCnpj:
         else:
             raise ValueError("CNPJ inválido!!")
 
-        def __str__(self):
+    def __str__(self):
             return self.format()
         
     def valida(self, documento):
-        mascara = CNPJ()
-        return mascara.validate(documento)
+        validador = CNPJ()
+        return validador.validate(documento)
 
     def format(self):
         mascara = CNPJ()
