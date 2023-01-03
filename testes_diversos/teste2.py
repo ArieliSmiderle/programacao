@@ -1,6 +1,6 @@
 #para escolher o jogo
-import teste
-import teste1
+import testes_diversos.teste as teste
+import testes_diversos.teste1 as teste1
 def escolhe_jogo():
     print('Escolha o seu jogo')
     print('(1)forca, (2)adivinhação')

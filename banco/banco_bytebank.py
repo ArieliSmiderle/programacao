@@ -1,5 +1,5 @@
 import requests
-from acesso_cep import BuscaEndereco
+from banco.acesso_cep import BuscaEndereco
 
 cep = "01001000"
 objeto_cep = BuscaEndereco(cep)
